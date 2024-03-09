@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -200,34 +198,6 @@ void wait_time(){
     double time_elapsed = (double)(end_time - start_time) / CLOCKS_PER_SEC;
     srand((unsigned int)time_elapsed);
 }
-
-// void play_fail_song() {
-//     // Define the frequencies for the Mario "fail" song notes
-//     #define E4 329
-//     #define C4 261
-//     #define G4 392
-//     #define G3 196
-//     #define E3 165
-//     #define A3 220
-//     #define B3 247
-//     #define Bb3 233
-
-//     int frequencies[] = {E4, E4, E4, C4, E4, G4, G3, C4, G3, E3, A3, B3, Bb3, A3};
-
-//     int durations[] = {500, 200, 500, 300, 500, 500, 600, 500, 300, 500, 300, 300, 100, 500};
-    
-//     for (int i = 0; i < sizeof(frequencies) / sizeof(frequencies[0]); i++) {
-//         int t = 1000000 / (frequencies[i] * 2);
-//         int n = durations[i] * 1000 / (t * 2);
-//         for (int j = 0; j < n; j++) {
-//             gpio_put(BUZZER_PIN, 1);
-//             sleep_us(t);
-//             gpio_put(BUZZER_PIN, 0);
-//             sleep_us(t);
-//         }
-//         sleep_ms(50); // Pause between notes
-//     }
-// }
 
 void set_rgb(char c) {
     if(c == 'r'){
